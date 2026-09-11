@@ -1,3 +1,7 @@
+## 0.2.1
+
+* fix(MergeCrossFadeOptions.toArgs): comma in float32
+
 ## 0.2.0
 
 * feat(createVideoWithHeader)!: extract `timebase`, `fps`
