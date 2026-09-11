@@ -1,0 +1,9 @@
+group Core
+  source https://api.nuget.org/v3/index.json
+  source https://gitlab.com/api/v4/projects/28574921/packages/nuget/index.json
+  strategy: min
+  storage: none
+  framework: net6.0
+
+  nuget FSharp.Core >= 6 lowest_matching: true
+  nuget FSharpMyExt >= 2.0.0-prerelease.11 lowest_matching: true
