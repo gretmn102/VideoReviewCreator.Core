@@ -1,18 +1,6 @@
 ﻿module VideoReviewCreator.Core
 open Ffmpeg.FSharp
 
-[<RequireQualifiedAccess>]
-[<CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
-module Bash =
-    let toDoubleQuote str =
-        let escape =
-            String.collect (function
-                | '"' -> "\\\""
-                | '\\' -> @"\\\\"
-                | c -> string c
-            )
-        $"\"{escape str}\""
-
 type GenerateTextOptions = {
     Size: int * int
     DurationSeconds: int
