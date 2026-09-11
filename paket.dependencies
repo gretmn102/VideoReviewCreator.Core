@@ -7,3 +7,4 @@ group Core
 
   nuget FSharp.Core >= 6 lowest_matching: true
   nuget FSharpMyExt >= 2.0.0-prerelease.11 lowest_matching: true
+  nuget Ffmpeg.FSharp >= 0.1 lowest_matching: true
