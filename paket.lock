@@ -24,7 +24,7 @@ NUGET
     TextCopy (4.2)
       Microsoft.Extensions.DependencyInjection.Abstractions (>= 3.1.4)
   remote: https://gitlab.com/api/v4/projects/28574921/packages/nuget/index.json
-    Ffmpeg.FSharp (0.1.0)
+    Ffmpeg.FSharp (0.2.0)
       FSharp.Core (>= 6.0)
       FSharpMyExt (>= 2.0.0-prerelease.11)
     FSharpMyExt (2.0.0-prerelease.11)

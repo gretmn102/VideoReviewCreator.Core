@@ -39,7 +39,7 @@ let generateText (options: GenerateTextOptions) (output: string) =
             yield! GenerateTextOptions.toArgs options
             Bash.toDoubleQuote output
         ]
-    FfMpeg.startProc args
+    Ffmpeg.startProc args
 
 type MergeCrossFadeOptions = {
     /// Это то, за сколько секунд делается переход.
@@ -73,7 +73,7 @@ let mergeCrossFade (options: MergeCrossFadeOptions) (output: string) (input1: st
             yield! MergeCrossFadeOptions.toArgs options
             Bash.toDoubleQuote output
         ]
-    FfMpeg.startProc args
+    Ffmpeg.startProc args
 
 let run (exitCode, stdout, stderr) =
     printfn "%s" stdout
