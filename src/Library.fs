@@ -54,7 +54,7 @@ module MergeCrossFadeOptions =
     let toArgs (options: MergeCrossFadeOptions) =
         let filter =
             String.concat ";" [
-                $"[0:v][1:v]xfade=transition=fade:duration={options.Duration}:offset={options.Offset}[vid]"
+                $"[0:v][1:v]xfade=transition=fade:duration=%g{options.Duration}:offset=%g{options.Offset}[vid]"
                 "[0:a][1:a]acrossfade=duration=2[aud]"
             ]
         [
