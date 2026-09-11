@@ -94,15 +94,15 @@ let exit =
         1
     >> exit
 
-let createVideoWithHeader text outputVideoPath inputVideoPath =
-    let headerVideoPath = "headerVideoPath.mp4"
+let createVideoWithHeader timebase fps text outputVideoPath inputVideoPath =
+    let headerVideoPath = "headerVideoPath.webm"
     headerVideoPath
     |> generateText {
         Size = 1368, 768
         DurationSeconds = 5
         Text = text
-        Timebase = "1/15360"
-        Fps = "30"
+        Timebase = timebase
+        Fps = fps
     }
     |> toResult
     |> Result.bind (fun () ->
@@ -115,4 +115,3 @@ let createVideoWithHeader text outputVideoPath inputVideoPath =
             outputVideoPath
         |> toResult
     )
-    |> exit
